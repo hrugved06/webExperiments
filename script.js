@@ -63,11 +63,17 @@ document.onkeydown = function(e) {
       return false;
   }
   if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+    alert ("Code Editor Disabled");
      return false;
   }
   if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
-     return false;
+    alert ("Page save Prohibited");
+    return false;
   }
+  if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)) {
+    alert ("You pressed the Ctrl + A key!");
+    return false;
+ }
 }
 
 document.addEventListener('visibilitychange',
