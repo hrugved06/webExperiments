@@ -468,3 +468,29 @@ header .navbar ul li a:hover{
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+/* Whatsapp API Starts */
+
+.sticky-whatsapp-wrapper a {
+  display: inline-block;
+}
+
+.sticky-whatsapp-wrapper {
+  
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.5;
+  position: fixed;
+  left: 27px;
+  width: 48px;
+  height: 48px;
+  bottom: 77px;
+
+}
+
+@media screen and (max-width: 1260px){
+  .sticky-whatsapp-wrapper {
+    bottom: 77px;
+  }
+}
+/* Whatsapp API Ends */
