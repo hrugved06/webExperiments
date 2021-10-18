@@ -71,3 +71,19 @@ function(){
         $("#favicon").attr("href","sticker2.png");
     }
 });
+
+var options = {
+    bottom: '64px', // default: '32px'
+    right: '32px', // default: 'unset'
+    left: 'unset', // default: '32px'
+    time: '0.5s', // default: '0.3s'
+    mixColor: '#fff', // default: '#fff'
+    backgroundColor: '#fff',  // default: '#fff'
+    buttonColorDark: '#100f2c',  // default: '#100f2c'
+    buttonColorLight: '#fff', // default: '#fff'
+    saveInCookies: false, // default: true,
+    label: '🌓' // default: ''
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
