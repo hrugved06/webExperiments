@@ -73,7 +73,7 @@ function(){
 });
 
 var options = {
-    bottom: '64px', // default: '32px'
+    bottom: '680px', // default: '32px'
     right: '32px', // default: 'unset'
     left: 'unset', // default: '32px'
     time: '0.5s', // default: '0.3s'
