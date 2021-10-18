@@ -47,7 +47,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.7rem 10%;
+  padding: 1.7rem 5%;
   height: 6.5rem;
   background-color: rgb(19, 18, 20);
   box-shadow: 0 1px 4px rgba(9, 255, 0, 0.993);
@@ -494,3 +494,16 @@ header .navbar ul li a:hover{
   }
 }
 /* Whatsapp API Ends */
+
+#theme{
+  width: 30px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.invert {
+  color: white;
+}

@@ -71,3 +71,16 @@ function(){
         $("#favicon").attr("href","sticker2.png");
     }
 });
+
+var theme = document.getElementById("theme");
+theme.onclick=function(){
+    document.body.classList.toggle("dark-mode")
+    if(document.body.classList.contains("dark-mode")){
+        theme.src = "holdings/images/sun.png";
+        document.querySelectorAll(".inverted").forEach((result) => {
+            result.classList.toggle("invert")
+        })
+    }else{
+        theme.src = "holdings/images/moon.png";
+    }
+}
