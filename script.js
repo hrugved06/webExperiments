@@ -81,7 +81,7 @@ var options = {
     backgroundColor: '#fff',  // default: '#fff'
     buttonColorDark: '#100f2c',  // default: '#100f2c'
     buttonColorLight: '#fff', // default: '#fff'
-    saveInCookies: true, // default: true,
+    saveInCookies: false, // default: true,
     label: '🌗' // default: ''
 }
 
