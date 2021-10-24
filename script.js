@@ -73,7 +73,7 @@ function(){
 });
 
 var options = {
-    bottom: '680px', // default: '32px'
+    bottom: '80px', // default: '32px'
     right: '32px', // default: 'unset'
     left: 'unset', // default: '32px'
     time: '0.5s', // default: '0.3s'
@@ -82,7 +82,7 @@ var options = {
     buttonColorDark: '#100f2c',  // default: '#100f2c'
     buttonColorLight: '#fff', // default: '#fff'
     saveInCookies: false, // default: true,
-    label: '🌓' // default: ''
+    label: '🌗' // default: ''
 }
 
 const darkmode = new Darkmode(options);

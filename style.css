@@ -494,3 +494,19 @@ header .navbar ul li a:hover{
   }
 }
 /* Whatsapp API Ends */
+
+/* Darkmode */
+
+
+/* Click Here */
+
+.click-here{
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.5;
+  position: fixed;
+  right: 45px;
+  width: 100px;
+  height: 48px;
+  bottom: 30px;
+}
