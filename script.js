@@ -74,7 +74,7 @@ function(){
 
 var options = {
     bottom: '80px', // default: '32px'
-    right: '32px', // default: 'unset'
+    right: '12px', // default: 'unset'
     left: 'unset', // default: '32px'
     time: '0.5s', // default: '0.3s'
     mixColor: '#fff', // default: '#fff'
