@@ -5,16 +5,17 @@ $(document).ready(function(){
         $('.navbar').toggleClass('nav-toggle');
     });
 
-    $(window).on('scroll load',function(){
-        $('#menu').removeClass('fa-times');
-        $('.navbar').removeClass('nav-toggle');
+// old Scroll to top
+    // $(window).on('scroll load',function(){
+    //     $('#menu').removeClass('fa-times');
+    //     $('.navbar').removeClass('nav-toggle');
 
-        if(window.scrollY>60){
-            document.querySelector('#scroll-top').classList.add('active');
-        }else{
-            document.querySelector('#scroll-top').classList.remove('active');
-        }
-    });
+    //     if(window.scrollY>60){
+    //         document.querySelector('#scroll-top').classList.add('active');
+    //     }else{
+    //         document.querySelector('#scroll-top').classList.remove('active');
+    //     }
+    // });
 });
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
@@ -73,8 +74,9 @@ function(){
 });
 
 var options = {
-    bottom: '80px', // default: '32px'
-    right: '12px', // default: 'unset'
+    bottom: '150px', // default: '32px'
+    position: 'relative',
+    right: '20px', // default: 'unset'
     left: 'unset', // default: '32px'
     time: '0.5s', // default: '0.3s'
     mixColor: '#fff', // default: '#fff'
@@ -87,3 +89,43 @@ var options = {
 
 const darkmode = new Darkmode(options);
 darkmode.showWidget();
+
+
+// Progressive scroll to top
+
+$(document).ready(function(){"use strict";
+	
+		//Scroll back to top
+		
+		var progressPath = document.querySelector('.progress-wrap path');
+		var pathLength = progressPath.getTotalLength();
+		progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+		progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+		progressPath.style.strokeDashoffset = pathLength;
+		progressPath.getBoundingClientRect();
+		progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';		
+		var updateProgress = function () {
+			var scroll = $(window).scrollTop();
+			var height = $(document).height() - $(window).height();
+			var progress = pathLength - (scroll * pathLength / height);
+			progressPath.style.strokeDashoffset = progress;
+		}
+		updateProgress();
+		$(window).scroll(updateProgress);	
+		var offset = 50;
+		var duration = 550;
+		jQuery(window).on('scroll', function() {
+			if (jQuery(this).scrollTop() > offset) {
+				jQuery('.progress-wrap').addClass('active-progress');
+			} else {
+				jQuery('.progress-wrap').removeClass('active-progress');
+			}
+		});				
+		jQuery('.progress-wrap').on('click', function(event) {
+			event.preventDefault();
+			jQuery('html, body').animate({scrollTop: 0}, duration);
+			return false;
+		})
+		
+		
+	});
