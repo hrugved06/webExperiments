@@ -67,13 +67,14 @@ section{
   color: rgb(115, 3, 167);
 }
 
-.btn {
+.new-logo {
   width: 150px;
   height: 50px;
   color: #e5ff00;
+  font-size: 1.9rem;
+  font-weight: 800;
   border: 1px solid #fff;
   font-family: 'Cinzel', serif;
-  font-size: 20px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   display: flex;
@@ -84,7 +85,7 @@ section{
   transition: 1s;
 }
 
-.btn::before, .btn::after {
+.new-logo::before, .new-logo::after {
   position: absolute;
   background: #000;
   z-index: -1;
@@ -92,12 +93,12 @@ section{
   content: '';
 }
 
-.btn::before {
+.new-logo::before {
   height: 50px;
   width: 130px;
 }
 
-.btn::after {
+.new-logo::after {
   width: 150px;
   height: 30px;
 }
@@ -111,18 +112,18 @@ section{
             user-select: none;
 }
 
-.btn:hover::before {
+.new-logo:hover::before {
   width: 0px;
   background: #000;
 }
 
-.btn:hover::after {
+.new-logo:hover::after {
   height: 0px;
   background: #000;
 }
 
-.btn:hover {
-  color: #00ffff;
+.new-logo:hover {
+  color: #ffae00;
   background: #000;
 }
 /* Logo Ends */
@@ -603,11 +604,11 @@ header .navbar ul li a:hover{
 
 .progress-wrap::after {
   position: absolute;
-  content: '☝🏼';
+  content: '▲';
   text-align: center;
   line-height: 46px;
   font-size: 20px;
-  color: #00e9fa;
+  color: #000000;
   left: 0;
   top: 0;
   height: 46px;
