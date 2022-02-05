@@ -71,7 +71,7 @@ section{
   width: 150px;
   height: 50px;
   color: #e5ff00;
-  font-size: 1.9rem;
+  font-size: 2.1rem;
   font-weight: 800;
   border: 1px solid #fff;
   font-family: 'Cinzel', serif;
@@ -123,7 +123,7 @@ section{
 }
 
 .new-logo:hover {
-  color: #ffae00;
+  color: #c300ff;
   background: #000;
 }
 /* Logo Ends */
